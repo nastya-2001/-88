@@ -1,0 +1,32 @@
+﻿<Window x:Class="Диплом.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Диплом"
+        mc:Ignorable="d"
+        Title="Меню" Height="500" Width="640">
+    <Grid  Background="#C0C0C0">
+        <Border MinWidth="600" Margin="0" Background="White" VerticalAlignment="Center" Padding="20" CornerRadius="10">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="20" Color="Black" ShadowDepth="0"></DropShadowEffect>
+            </Border.Effect>
+            <StackPanel Orientation="Vertical">
+                <StackPanel>
+                    <TextBlock Text="Меню" FontSize="30" FontWeight="Bold" Margin="0 0 0 20" />
+
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button  Content="Обучающиеся" Click="Button_Click_1" />
+                    <Button   Content="ДПО" Margin="5,0,0,0" Click="Button_Click_2" />
+
+                    <Button   Content="Документы" Margin="5,0,0,0"  Click="Button_Click_3" />
+                    <Button Content="Сдача отчётности"  Margin="5,0,0,0"  Click="Button_Click_4" />
+                    <Button Content="Заявление"  Margin="5,0,0,0" Click="Button_Click_5"  />
+
+                </StackPanel>
+                    
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
